@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { AppService, productService } from './app.service';
+import { AppService} from './app.service';
 
 @Controller()
 export class AppController {
@@ -15,11 +15,3 @@ export class AppController {
     return this.appService.logicToSayGoodbye();
   };
 }
-@Controller('Product')
-export class ProductController {
-  constructor(private readonly productService :  productService) {}
-  @Get('prudctName')
-  getProductName(): string[] {
-    return this.productService.getProduct()
-  }
-}  

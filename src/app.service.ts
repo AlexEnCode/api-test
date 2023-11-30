@@ -10,11 +10,3 @@ export class AppService {
     return 'Goodbye';
   }
 }
-
-@Injectable()
-export class productService {
-  getProduct() : string[]{
-    return ['article1','article2']
-  }
-
-}
