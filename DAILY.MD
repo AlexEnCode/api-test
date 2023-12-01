@@ -79,7 +79,7 @@ model Users {
 - [x] 26. Créer une route pour récupérer les informations d'un utilisateur par son UUID.
 - [x] 27. Créer une route pour modifier les informations d'un utilisateur.
 - [x] 28. Créer une route pour supprimer un utilisateur par son UUID.
-- [ ] 29. Normaliser toutes les réponses du controller `Users` sous le format suivant : 
+- [x] 29. Normaliser toutes les réponses du controller `Users` sous le format suivant : 
     - Un champ de message qui doit dire que l'opération à bien été exécutée nommé `message`.
     - Un champ de données qui doit contenir le résultat de l'opération nommé `data`.
 - [ ] 30. Préparer la validation des données envoyées par l'utilisateur en utilisant la `Validation Pipe` et ses décorateurs.
