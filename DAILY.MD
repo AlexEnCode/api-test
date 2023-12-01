@@ -82,16 +82,16 @@ model Users {
 - [x] 29. Normaliser toutes les réponses du controller `Users` sous le format suivant : 
     - Un champ de message qui doit dire que l'opération à bien été exécutée nommé `message`.
     - Un champ de données qui doit contenir le résultat de l'opération nommé `data`.
-- [ ] 30. Préparer la validation des données envoyées par l'utilisateur en utilisant la `Validation Pipe` et ses décorateurs.
-- [ ] 31. Utiliser la `Validation Pipe` comme `Global Pipe`.
-- [ ] 32. Transformer automatiquement les données envoyées par l'utilisateur dans le type attendu dans le DTO grâce à la `Validation Pipe`.
+- [x] 30. Préparer la validation des données envoyées par l'utilisateur en utilisant la `Validation Pipe` et ses décorateurs.
+- [x] 31. Utiliser la `Validation Pipe` comme `Global Pipe`.
+- [x] 32. Transformer automatiquement les données envoyées par l'utilisateur dans le type attendu dans le DTO grâce à la `Validation Pipe`.
 
 </details>
 <details open>
 <summary><h2>Documentation de l'API : Swagger</h2></summary>
 
-- [ ] 33. Installer `Swagger` en tant que dépendance du projet.
-- [ ] 34. Initialiser `Swagger` pour être utilisé par Nest.
+- [x] 33. Installer `Swagger` en tant que dépendance du projet.
+- [x] 34. Initialiser `Swagger` pour être utilisé par Nest.
 - [ ] 35. Utiliser le décorateur `Swagger` approprié pour documenter les routes du controller `Users` séparément.
 - [ ] 36. Documenter les champs du DTO de création d'utilisateur en utilisant le décorateur `Swagger` approprié.
 - [ ] 37. Tester la documentation Swagger en se rendant à l'URL `http://localhost:3000/api` ([s'y rendre](http://localhost:3000/api))
