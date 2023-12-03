@@ -2,10 +2,18 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { ApiTags } from '@nestjs/swagger';
+import { ProductService } from 'src/product/product.service';
+
+
 
 @Controller('users')
+@ApiTags('Users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(
+    private readonly usersService: UsersService,
+    private readonly productsService: ProductService,
+  ) {}
 
   @Post()
   create(@Body() createUserDto: CreateUserDto) {
@@ -18,17 +26,30 @@ export class UsersController {
   }
 
   @Get(':uuid')
-  public getUUID(@Param('uuid') uuid: string) {
+  public getByUUID(@Param('uuid') uuid: string) {
     return this.usersService.getUUID(uuid);
   }
 
+  @Get(':uuid/products')
+  public getProductsByUserUUID(@Param('uuid') uuid: string) {
+    return this.productsService.getProductsByUserUUID(uuid);
+  }
+
   @Patch(':uuid')
-  update(@Param('uuid') uuid: string, @Body() updateUserDto: UpdateUserDto) {
+  public updateByUUID(
+    @Param('uuid') uuid: string,
+    @Body() updateUserDto: UpdateUserDto,
+  ) {
     return this.usersService.updateUUID(uuid, updateUserDto);
   }
 
   @Delete(':uuid')
-  delete(@Param('uuid') uuid: string) {
+  public deleteByUUID(@Param('uuid') uuid: string) {
     return this.usersService.removeUUID(uuid);
   }
+  @Delete(':uuid/products')
+  public deleteProductsByUserUUID(@Param('uuid') uuid: string) {
+    return this.productsService.deleteProductsByUserUUID(uuid);
+  }
+
 }
