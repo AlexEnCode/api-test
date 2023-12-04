@@ -100,19 +100,19 @@ model Users {
 <details open>
 <summary><h2>CRUD pour les produits</h2></summary>
 
-- [ ] 38. Créer une route et ses besoins annexes pour enregistrer de nouveaux article.
-- [ ] 39. Créer une route pour récupérer un article par son UUID.
-- [ ] 40. Créer une route et ses besoins annexes pour modifier les informations d'un article par son UUID.
-- [ ] 41. Créer une route pour supprimer un article par son UUID.
+- [x] 38. Créer une route et ses besoins annexes pour enregistrer de nouveaux article.
+- [x] 39. Créer une route pour récupérer un article par son UUID.
+- [x] 40. Créer une route et ses besoins annexes pour modifier les informations d'un article par son UUID.
+- [x] 41. Créer une route pour supprimer un article par son UUID.
 
 </details>
 <details open>
 <summary><h2>Utilisation d'un service depuis un autre module</h2></summary>
 
-- [ ] 42. Définir le service `Products` en tant que provider du module `Users`.
-- [ ] 43. Créer une méthode dans le service `Products` pour récupérer tous les articles d'un utilisateur en fonction de l'UUID de l'utilisateur.
-- [ ] 44. Créer une route dans le controller `Users` qui retourne les articles d'un utilisateur.
-- [ ] 45. Faire la même chose pour supprimer les articles d'un utilisateur.
+- [x] 42. Définir le service `Products` en tant que provider du module `Users`.
+- [x] 43. Créer une méthode dans le service `Products` pour récupérer tous les articles d'un utilisateur en fonction de l'UUID de l'utilisateur.
+- [x] 44. Créer une route dans le controller `Users` qui retourne les articles d'un utilisateur.
+- [x] 45. Faire la même chose pour supprimer les articles d'un utilisateur.
 
 </details>
 
